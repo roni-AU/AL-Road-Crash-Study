@@ -69,14 +69,14 @@ We aim to answer the following questions:
 crash_project_2018/
 │
 ├── data/
-│ ├── raw/
-│ └── cleaned/
+│   ├── raw/
+│   └── cleaned/
 │
 ├── notebooks/
-│ ├── 01_data_cleaning.ipynb
-│ ├── 02_exploratory_analysis.ipynb
-│ ├── 03_severity_patterns.ipynb
-│ └── 04_time_based_analysis.ipynb
+│   ├── 01_data_cleaning.ipynb
+│   ├── 02_exploratory_analysis.ipynb
+│   ├── 03_severity_patterns.ipynb
+│   └── 04_time_based_analysis.ipynb
 │
 ├── utils.py
 ├── ruff.toml
@@ -98,7 +98,6 @@ git push
 
 
 3. **Notebook outputs** are auto-removed via `nbstripout` to avoid merge conflicts.
-
 4. Partners coordinate notebook ownership to avoid simultaneous edits.
 
 ## Team Members
