@@ -63,7 +63,7 @@ We aim to answer the following questions:
 - How driver and crash mechanism variables relate to severity?
 - Are there meaningful interactions or combinations of factors that consistently correspond to high-severity crashes?
 
-##Collaboration Workflow
+## Collaboration Workflow
 This project follows the collaboration workflow recommended in the course:
 
 1. **Always pull before starting work:**
