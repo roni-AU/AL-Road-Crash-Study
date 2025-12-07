@@ -4,7 +4,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-st.set_page_config(page_title="Alabama Crash Severity Dashboard", layout="wide")
+st.set_page_config(page_title="🚦Alabama Crash Severity Dashboard", layout="wide")
 
 
 @st.cache_data
@@ -20,32 +20,39 @@ df["Severity_Num"] = df["Crash Severity"].map(severity_map)
 if "log_AADT" not in df.columns and "AADT" in df.columns:
     df["log_AADT"] = np.log1p(df["AADT"])
 
-st.sidebar.title("Crash Severity Dashboard")
-page = st.sidebar.radio("Go to", ["🏠 Home", "📊 Overview", "📈 Severity Distribution", "📋 Factor Ranking"])
+st.sidebar.title("🚦Alabama Crash Severity Dashboard")
+page = st.sidebar.radio(
+    "Go to", ["🏠 Home", "📊 Overview", "📈 Severity Distribution", "📋 Factor Ranking"]
+)
 
 # 0) WELCOME PAGE ------------------------------------------------------------
 if page == "🏠 Home":
-    st.title("🚦Alabama Crash Data Dashboard")
+    st.title("Welcome")
 
     st.markdown("""
-    ### 👋 About This App
+    ### About The Dashboard 
     This interactive dashboard was created to help researchers, students, and transportation professionals:
     - Explore Alabama crash data using visual analytics  
     - Understand the distribution of crash severity  
     - Investigate contributing factors (driver, vehicle, roadway, environment)  
     - Support data-driven safety analysis and decision making  
 
-    ### 📅 Data Used
+    ### Data Used
     - **Year:** 2018  
-    - **Source:** ALDOT 
+    - **Source:** CARE Database 
     - **Cleaned dataset:** crash_2018_cleaned.pkl  
 
-    ### 👨‍💻 Developers
+    ### Developers
     - **Md Roknuzzaman**
+      - Graduate Research Assistant, Auburn University, Auburn AL-36849. 
+      - Email: mzr0177@auburn.edu
+    
     - **Kwaku Emmanuel Tufuor**
+      - Graduate Research Assistant, Auburn University, Auburn AL-36849.
+      - Email: kwt0013@auburn.edu
    
 
-    ### 📌 How to use this app
+    ### How to use this app
     Use the **left sidebar** to navigate:
     - **Overview** – dataset preview & severity distribution  
     - **Severity distribution** – filter crashes and visualize severity  
@@ -308,4 +315,3 @@ elif page == "📋 Factor Ranking":
         st.pyplot(fig)
     else:
         st.warning("Not enough crashes in this subset to compute a stable ranking.")
-
