@@ -1,7 +1,7 @@
 # Alabama Crash Data 2018 – Crash Severity Analysis
 *INSY 6500 – Final Project*
 
-#Live Dasheboard
+# Live Dashboard
 https://alabama2018crashseverity.streamlit.app/
 
 ## Authors
