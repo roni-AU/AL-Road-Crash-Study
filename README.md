@@ -61,6 +61,7 @@ The project is organized into the following notebooks:
 **Task - 4: Multivariate Analysis and Transformations** led by Md Roknuzzaman and Kwaku Emmanuel Tufuor
    - Analysis of correlation matrix 
    - Explore pairwise relationship
+   - Ranking of contributing factors
 
 **Task - 5: Conclusion, Interpretation and Presentation** led by Md Roknuzzaman and Kwaku Emmanuel Tufuor
    - Make concluding remarks 
@@ -75,10 +76,11 @@ The project is organized into the following notebooks:
 
 ## Research Questions
 We aim to answer the following questions:
-- How does crash severity vary with roadway conditions?
-- What environmental conditions are associated with higher severity crashes?
-- How do driver and crash mechanism variables relate to severity?
-- Are there meaningful interactions or combinations of factors that consistently correspond to high-severity crashes?
+- Which areas contain the most high-risk roads, and which have the safest roads, based on crash severity?
+- How does crash severity vary across different roadway conditions?
+- How do driver and vehicle characteristics influence crash severity?
+- Which environmental conditions are associated with higher-severity crashes?
+- What is the relative importance of contributing factors? Which factors have the greatest influence on crash severity, and which have the least?
 
 ## Collaboration Workflow
 This project follows the collaboration workflow recommended in the course:
@@ -103,4 +105,5 @@ git push
 - Identification of the most influential roadway, environmental, and traffic conditions associated with severe crashes.  
 - Visual and statistical summaries of patterns influencing crash severity.  
 - A cleaned, well-documented dataset suitable for further modeling and safety analysis.
+- An interactive dashboard to view crash severity for different combinations of contributing factors.
 
