@@ -4,7 +4,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-st.set_page_config(page_title="Crash Severity Dashboard", layout="wide")
+st.set_page_config(page_title="Alabama Crash Severity Dashboard", layout="wide")
 
 
 @st.cache_data
@@ -21,10 +21,43 @@ if "log_AADT" not in df.columns and "AADT" in df.columns:
     df["log_AADT"] = np.log1p(df["AADT"])
 
 st.sidebar.title("Crash Severity Dashboard")
-page = st.sidebar.radio("Go to", ["Overview", "Severity distribution", "Factor ranking"])
+page = st.sidebar.radio("Go to", ["🏠 Home", "📊 Overview", "📈 Severity Distribution", "📋 Factor Ranking"])
+
+# 0) WELCOME PAGE ------------------------------------------------------------
+if page == "🏠 Home":
+    st.title("🚦Alabama Crash Data Dashboard")
+
+    st.markdown("""
+    ### 👋 About This App
+    This interactive dashboard was created to help researchers, students, and transportation professionals:
+    - Explore Alabama crash data using visual analytics  
+    - Understand the distribution of crash severity  
+    - Investigate contributing factors (driver, vehicle, roadway, environment)  
+    - Support data-driven safety analysis and decision making  
+
+    ### 📅 Data Used
+    - **Year:** 2018  
+    - **Source:** ALDOT 
+    - **Cleaned dataset:** crash_2018_cleaned.pkl  
+
+    ### 👨‍💻 Developers
+    - **Md Roknuzzaman**
+    - **Kwaku Emmanuel Tufuor**
+   
+
+    ### 📌 How to use this app
+    Use the **left sidebar** to navigate:
+    - **Overview** – dataset preview & severity distribution  
+    - **Severity distribution** – filter crashes and visualize severity  
+    - **Factor ranking** – identify variables most related to severity  
+
+    ---
+    **Start exploring using the sidebar**
+    """)
+
 
 # 1) OVERVIEW ---------------------------------------------------------------
-if page == "Overview":
+if page == "📊 Overview":
     st.title("Overview of Alabama 2018 Crash Data")
 
     st.write("Rows, columns:", df.shape)
@@ -38,7 +71,7 @@ if page == "Overview":
 
 
 # 2) SEVERITY DISTRIBUTION --------------------------------------------------
-if page == "Severity distribution":
+if page == "📈 Severity distribution":
     st.title("Crash severity distribution")
 
     st.sidebar.subheader("Filters: Crash Type, Area and Time")
@@ -157,7 +190,7 @@ if page == "Severity distribution":
 
 
 # 3) FACTOR RANKING ---------------------------------------------------------
-if page == "Factor ranking":
+if page == "📋 Factor ranking":
     st.title("Ranking of factors related to crash severity")
 
     st.sidebar.subheader("Filters: Crash Type, Area and Time")
@@ -275,3 +308,4 @@ if page == "Factor ranking":
         st.pyplot(fig)
     else:
         st.warning("Not enough crashes in this subset to compute a stable ranking.")
+
