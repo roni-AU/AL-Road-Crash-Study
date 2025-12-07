@@ -35,31 +35,31 @@ For this study, we focus on identifying **patterns and contributing factors asso
 ## Project Workflow
 The project is organized into the following notebooks:
 
-**Task - 1: Selection of Relevant Columns** led by Md Roknuzzaman and Kwaku Emmanuel Tufuor  
+**Task - 0: Selection of Relevant Columns** led by Md Roknuzzaman and Kwaku Emmanuel Tufuor  
    - Study existing literature to identify potential factors   
    - Select relevant columns 
    - Save relevant columns as `Raw_Data.csv`
      
-**Task - 2: Data Quality and Cleaning**  led by Md Roknuzzaman
+**Task - 1: Data Quality and Cleaning**  led by Md Roknuzzaman
    - Load raw CARE crash data   
    - Handle missing values and encode variables  
    - Save cleaned dataset as `crash_2018_cleaned.pkl`
 
-**Task - 3: Univariate EDA** led by Kwaku Emmanuel Tufuor
+**Task - 2: Univariate EDA** led by Kwaku Emmanuel Tufuor
    - Summary statistics and distributions  
    - Crash severity frequency analysis  
    - Visual exploration of roadway, environmental, and traffic factors  
 
-**Task - 4: Bivariate EDA** led by Md Roknuzzaman
+**Task - 3: Bivariate EDA** led by Md Roknuzzaman
    - Analysis of severity vs other factors 
    - Cross-tabulations and conditional probabilities
    - Visual explorations 
 
-**Task - 5: Multivariate Analysis and Transformations** led by Md Roknuzzaman and Kwaku Emmanuel Tufuor
+**Task - 4: Multivariate Analysis and Transformations** led by Md Roknuzzaman and Kwaku Emmanuel Tufuor
    - Analysis of correlation matrix 
    - Explore pairwise relationship
 
-**Task - 6: Conclusion, Interpretation and Presentation** led by Md Roknuzzaman and Kwaku Emmanuel Tufuor
+**Task - 5: Conclusion, Interpretation and Presentation** led by Md Roknuzzaman and Kwaku Emmanuel Tufuor
    - Make concluding remarks 
    - Prepare Streamlit dashboard for presentation  
 
