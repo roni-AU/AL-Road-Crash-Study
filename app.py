@@ -71,7 +71,7 @@ elif page == "📊 Overview":
 
 
 # 2) SEVERITY DISTRIBUTION --------------------------------------------------
-elif page == "📈 Severity distribution":
+elif page == "📈 Severity Distribution":
     st.title("Crash severity distribution")
 
     st.sidebar.subheader("Filters: Crash Type, Area and Time")
@@ -190,7 +190,7 @@ elif page == "📈 Severity distribution":
 
 
 # 3) FACTOR RANKING ---------------------------------------------------------
-elif page == "📋 Factor ranking":
+elif page == "📋 Factor Ranking":
     st.title("Ranking of factors related to crash severity")
 
     st.sidebar.subheader("Filters: Crash Type, Area and Time")
