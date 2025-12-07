@@ -57,7 +57,7 @@ if page == "🏠 Home":
 
 
 # 1) OVERVIEW ---------------------------------------------------------------
-if page == "📊 Overview":
+elif page == "📊 Overview":
     st.title("Overview of Alabama 2018 Crash Data")
 
     st.write("Rows, columns:", df.shape)
@@ -71,7 +71,7 @@ if page == "📊 Overview":
 
 
 # 2) SEVERITY DISTRIBUTION --------------------------------------------------
-if page == "📈 Severity distribution":
+elif page == "📈 Severity distribution":
     st.title("Crash severity distribution")
 
     st.sidebar.subheader("Filters: Crash Type, Area and Time")
@@ -190,7 +190,7 @@ if page == "📈 Severity distribution":
 
 
 # 3) FACTOR RANKING ---------------------------------------------------------
-if page == "📋 Factor ranking":
+elif page == "📋 Factor ranking":
     st.title("Ranking of factors related to crash severity")
 
     st.sidebar.subheader("Filters: Crash Type, Area and Time")
